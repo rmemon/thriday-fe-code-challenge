@@ -16,8 +16,12 @@ Your solution should be shared on a public Github or Bitbucket repo showing all 
 
 We have provided a JSON file containing a small sample from an API response; it contains a list of Transactions. Using this JSON data, build a React app that implements the following design.
 
-(![Desktop Design](screens/desktop.png?raw=true "Desktop Design"))
-(![Mobile Design](screens/mobile.png?raw=true "Mobile Design"))
+| Breakpoint      | Design      |
+|------------|-------------|
+| Desktop | <img src="screens/desktop.png" width="75%" height="75%" />  |
+| Mobile | <img src="screens/mobile.png" width="50%" height="50%" /> |
+
+
 
 ### Assets
 
