@@ -25,7 +25,7 @@ We have [provided a JSON file](db.json) containing a small sample from an API re
 
 ### Assets
 
-* You can find the design on Figma here.
+* You can find [the designs on Figma](https://www.figma.com/file/RzMYg5QlEwrlNIGnynqX8R/Engineer-Test?node-id=0%3A1).
 * The Overpass font is [available on Google Fonts.](https://fonts.google.com/specimen/Overpass)
 
 ### Acceptance Criteria
