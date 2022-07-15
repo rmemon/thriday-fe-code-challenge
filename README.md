@@ -10,11 +10,11 @@ Your solution should be shared on a public Github or Bitbucket repo showing all 
 
 * Use ReactJS (create-react-app encouraged)
 * You can use either Hooks or standard react, but in either case the correct use of state and props is required, as well as correct component abstraction (i.e. knowing when to make something a subcomponent)
-* This is not a UX test, focus on the functionality
+* Don't worry about testing this in multiple browsers; just use whichever one you're most comfortable with, and let us know so we can test in the same one.
 
 ## The Challenge
 
-We have provided a JSON file containing a small sample from an API response; it contains a list of Transactions. Using this JSON data, build a React app that implements the following design.
+We have provided a JSON file containing a small sample from an API response; it contains a list of Transactions. Using this JSON data, build a React app that implements the Transaction list (i.e. the highlighted area) shown in the following desktop/mobile designs:
 
 | Breakpoint      | Design      |
 |------------|-------------|
@@ -26,7 +26,7 @@ We have provided a JSON file containing a small sample from an API response; it 
 ### Assets
 
 * You can find the design on Figma here.
-* The Overpass font is available on Google Fonts.
+* The Overpass font is [available on Google Fonts.](https://fonts.google.com/specimen/Overpass)
 
 ### Acceptance Criteria
 
