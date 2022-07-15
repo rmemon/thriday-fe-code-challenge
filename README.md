@@ -14,7 +14,7 @@ Your solution should be shared on a public Github or Bitbucket repo showing all 
 
 ## The Challenge
 
-We have provided a JSON file containing a small sample from an API response; it contains a list of Transactions. Using this JSON data, build a React app that implements the Transaction list (i.e. the highlighted area) shown in the following desktop/mobile designs:
+We have [provided a JSON file](db.json) containing a small sample from an API response; it contains a list of Transactions. Using this JSON data, build a React app that implements the Transaction list (i.e. the highlighted area) shown in the following desktop/mobile designs:
 
 | Breakpoint      | Design      |
 |------------|-------------|
