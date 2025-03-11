@@ -29,11 +29,13 @@ Using the data from the API, create React components that implement the Transact
 
 ### Step 2
 
-Implement 3 buttons on the toolbar to filter the list of Transactions:
+Implement a toolbar with 3 buttons to filter the list of Transactions:
 
 * All
 * Income
 * Expense
+
+<img src="screens/toolbar.png" />
 
 
 ### Assets
