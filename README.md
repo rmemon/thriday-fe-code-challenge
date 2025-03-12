@@ -19,7 +19,7 @@ We have [provided a JSON file](data/db.json) that powers a mock API (see [availa
 
 ### Step 1
 
-Using the data from the API, create React components that implement the Transaction list (i.e. the highlighted area) shown in the following desktop/mobile designs:
+Using the data from the API, create React components that implement the Transaction list shown in the following desktop/mobile designs:
 
 | Breakpoint      | Design      |
 |------------|-------------|
@@ -40,7 +40,7 @@ Implement a toolbar with 3 buttons to filter the list of Transactions:
 
 ### Assets
 
-* You can find [the designs on Figma](https://www.figma.com/file/RzMYg5QlEwrlNIGnynqX8R/Engineer-Test?node-id=0%3A1).
+* You can find [the designs on Figma](https://www.figma.com/design/CkejoJbdFNwKJGv0aBSzWE/Transactions-(Dev-test)?m=auto&t=8AccDG8Ku6jzoTzD-6).
 
 ### Acceptance Criteria
 
@@ -79,6 +79,9 @@ The "Income" filter should show only transactions with a "cashflow" of "inflow".
 The "Expense" filter should show only transactions with a "cashflow" of "outflow".
 
 When a button is selected, the background colour should be green and the text colour should be white.
+When not selected, the background should be white and the text should be black.
+The check icon is only shown on the "All" button, and only when the button is selected.
+We have also provided SVG icons for the Income and Expense buttons.
 
 
 ## Available Scripts
