@@ -6,10 +6,13 @@ Our React technical interview process involves candidates doing an at-home proje
 Using Google/StackOverflow/whatever for help is allowed, but ultimately you should write and be able to justify every piece of the code being submitted.
 Your solution should be shared on a public Github or Bitbucket repo showing all commit history.
 
+If you would like us to claify any requirements, please reach out.
+
 ## Requirements
 
 * Use React
 * Use TypeScript
+* Accuracy in implementing the design is important, the final result should match the provided Figma designs
 * Think about the use of state management and props, as well as component abstraction (i.e. breaking down the UI into a set of reusable components)
 * Don't worry about testing this in multiple browsers; just use whichever one you're most comfortable with, and let us know so we can test in the same one
 
@@ -19,7 +22,7 @@ We have [provided a JSON file](data/db.json) that powers a mock API (see [availa
 
 ### Step 1
 
-Using the data from the API, create React components that implement the Transaction list shown in the following desktop/mobile designs:
+Using the data from the API, create React components that implement the Transaction list shown in the following desktop/mobile screenshots:
 
 | Breakpoint      | Design      |
 |------------|-------------|
