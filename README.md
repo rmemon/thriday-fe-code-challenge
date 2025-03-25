@@ -6,7 +6,7 @@ Our React technical interview process involves candidates doing an at-home proje
 Using Google/StackOverflow/whatever for help is allowed, but ultimately you should write and be able to justify every piece of the code being submitted.
 Your solution should be shared on a public Github or Bitbucket repo showing all commit history.
 
-If you would like us to claify any requirements, please reach out.
+If you would like us to clarify any requirements, please reach out.
 
 ## Requirements
 
