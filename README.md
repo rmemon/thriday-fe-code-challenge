@@ -13,6 +13,7 @@ If you would like us to clarify any requirements, please reach out.
 * Use React
 * Use TypeScript
 * Accuracy in implementing the design is important, the final result should match the provided Figma designs
+  * No need to add hover effects etc to the transaction cards
 * Think about the use of state management and props, as well as component abstraction (i.e. breaking down the UI into a set of reusable components)
 * Don't worry about testing this in multiple browsers; just use whichever one you're most comfortable with, and let us know so we can test in the same one
 
@@ -38,7 +39,11 @@ Implement a toolbar with 3 buttons to filter the list of Transactions:
 * Income
 * Expense
 
-<img src="screens/toolbar.png" />
+| Title      | Design      |
+|------------|-------------|
+| "All" selected | <img src="screens/toolbar.png" /> |
+| "Income" selected | <img src="screens/toolbar-income.png" /> |
+| "Expense" selected | <img src="screens/toolbar-expense.png" /> |
 
 
 ### Assets
@@ -75,11 +80,9 @@ The 3 toolbar buttons are mutually exclusive; only one can be selected at a time
 
 When a button is selected, the list of transactions should be filtered to only show transactions that match the selected filter.
 
-The "All" filter should show all transactions.
-
-The "Income" filter should show only transactions with a "cashflow" of "inflow".
-
-The "Expense" filter should show only transactions with a "cashflow" of "outflow".
+* The "All" filter should show all transactions.
+* The "Income" filter should show only transactions with a "cashflow" of "inflow".
+* The "Expense" filter should show only transactions with a "cashflow" of "outflow".
 
 When a button is selected, the background colour should be green and the text colour should be white.
 When not selected, the background should be white and the text should be black.
