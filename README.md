@@ -111,20 +111,6 @@ Open [http://localhost:3004](http://localhost:3004) to view it in your browser.
 Get a list of all Transactions
 http://localhost:3004/transactions
 
-**Paginate**
-
-Use \_page and optionally \_limit to paginate returned data.
-
-```
-GET /transactions?_page=3
-```
-
-```
-GET /transactions?_page=3&_limit=20
-```
-
-_10 items are returned by default_
-
 **Filtering**
 
 You can filter the data by particular attributes via query string parameters.
