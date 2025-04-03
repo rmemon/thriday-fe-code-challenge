@@ -32,6 +32,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     margin: 0;
+    font-size: 1.6rem;
 }
 
 *,
@@ -46,7 +47,7 @@ body {
   gap: 3.2rem;
 }
 
-.content h1 {
+/* .content h1 {
   font-size: 3.6rem;
   font-weight: 700;
 }
@@ -54,4 +55,69 @@ body {
 .content p {
   margin: 0;
   font-size: 1.6rem;
+} */
+
+:root {
+  --primary-color: #183D33;
+  --secondary-color: #000000;
+  --text-color: #111111;
+  --text-secondary-color: #555555;
+  --success-color: #00CC00;
+  --danger-color: #CC0000;
+  --border-color: #E0E0E0;
+  --white-color: #FFFFFF;
+  --active-color: #00D373;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mb-1 {
+  margin-bottom: 1.6rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.d-flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.gap-8 {
+  gap: 0.8rem;
+}
+
+.text-success {
+  color: var(--success-color);
+}
+
+.text-danger {
+  color: var(--danger-color);
 }

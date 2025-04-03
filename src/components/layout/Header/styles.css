@@ -1,0 +1,5 @@
+.header {
+  background-color: var(--primary-color);
+  display: flex;
+  padding: 1.6rem;
+}

@@ -4,6 +4,9 @@ import '@fontsource/source-sans-pro/600.css';
 import '@fontsource/source-sans-pro/700.css';
 
 import ContentWidthContainer from './components/layout/ContentWidthContainer';
+import Header from './components/layout/Header';
+import Toolbar from './components/Toolbar';
+import TransactionList from './components/TransactionList';
 
 import './App.css';
 
@@ -22,13 +25,9 @@ const App = () => {
   return (
     <ContentWidthContainer>
       <main className="content">
-        <h1>Thriday Code Challenge</h1>
-        <section>
-          <p>Toolbar</p>
-        </section>
-        <section>
-          <p>Transaction List</p>
-        </section>
+        <Header />
+        <Toolbar />
+        <TransactionList />
       </main>
     </ContentWidthContainer>
   );

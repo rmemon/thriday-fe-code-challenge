@@ -1,0 +1,58 @@
+/* Transaction Row */
+.transaction-row {
+  padding: 1.6rem;
+  background-color: var(--white-color);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.transaction-row:hover {
+  background-color: rgba(0, 211, 115, 0.05);
+}
+
+.transaction-row__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  background-color: var(--white-color);
+  margin-right: 16px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.transaction-row__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.transaction-row__subtitle {
+  font-size: 1.4rem;
+  color: var(--text-secondary-color);
+}
+
+.transaction-row__subtitle span {
+  display: inline-block;
+  line-height: 12px;
+  margin-right: 0.6rem;
+}
+
+.transaction-row__subtitle span+span {
+  border-left: 1px solid var(--text-secondary-color);
+  padding-left: 0.6rem;
+}
+
+.transaction-row__amount {
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  margin-left: 1.6rem;
+}
+
+.transaction-row__amount span {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 0.6rem;
+}
