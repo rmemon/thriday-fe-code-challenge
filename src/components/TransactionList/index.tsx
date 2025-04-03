@@ -86,6 +86,11 @@ export const TransactionList: React.FC = () => {
   }, [cashflow]);
 
   useEffect(() => {
+    if (!hasMounted.current && page === 1) {
+      hasMounted.current = true;
+      return;
+    }
+
     const fetchTransactions = async () => {
       setLoading(true);
       try {
@@ -102,9 +107,9 @@ export const TransactionList: React.FC = () => {
             if (!transactionMap.has(key)) {
               transactionMap.set(key, true);
               newGrouped[date] = newGrouped[date] || [];
-              if (!newGrouped[date].some(t => t.transactionId === transaction.transactionId)) {
-                newGrouped[date].push(transaction);
-              }
+              // if (!newGrouped[date].some(t => t.transactionId === transaction.transactionId)) {
+              newGrouped[date].push(transaction);
+              // }
             }
           });
 
