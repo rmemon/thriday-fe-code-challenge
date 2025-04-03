@@ -93,8 +93,8 @@
 }
 
 /* Responsive */
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .search-input {
     min-width: 100%;
   }
-}
+} */

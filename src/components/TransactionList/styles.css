@@ -1,11 +1,19 @@
 /* Transaction Row */
+.transaction-group {
+  margin-top: 1.2rem;
+}
+
 .transaction-row {
-  padding: 1.6rem;
+  padding: 1rem;
   background-color: var(--white-color);
   border-radius: 8px;
   border: 1px solid var(--border-color);
   transition: all 0.3s ease;
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    padding: 1.6rem;
+  }
 }
 
 .transaction-row:hover {
@@ -17,9 +25,13 @@
   height: 48px;
   border-radius: 4px;
   background-color: var(--white-color);
-  margin-right: 16px;
+  margin-right: 8px;
   border: 1px solid var(--border-color);
   overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 16px;
+  }
 }
 
 .transaction-row__title {

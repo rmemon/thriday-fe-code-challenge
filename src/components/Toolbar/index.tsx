@@ -1,51 +1,55 @@
-import { useState } from 'react';
+import transactionStore from '../../store/transaction';
 
-import arrowLeftIcon from '../../assets/arrow-left.svg';
-import arrowRightIcon from '../../assets/arrow-right.svg';
 import checkIcon from '../../assets/check-circle-fill.svg';
 import minusIcon from '../../assets/minus.svg';
 import plusIcon from '../../assets/plus.svg';
-import searchIcon from '../../assets/search.svg';
+// import arrowLeftIcon from '../../assets/arrow-left.svg';
+// import arrowRightIcon from '../../assets/arrow-right.svg';
+// import searchIcon from '../../assets/search.svg';
 
 import './styles.css';
 
+
 const Toolbar: React.FC = () => {
-  const [activeTab, setActiveTab] = useState('all');
+  const cashflow = transactionStore((state) => state.cashflow);
+  const setCashflow = transactionStore((state) => state.setCashflow);
 
   const handleTabClick = (tab: string) => {
-    setActiveTab(tab);
+    setCashflow(tab as 'inflow' | 'outflow' | null);
   };
 
   type ToolbarTab = {
-    id: 'all' | 'plus' | 'minus';
+    id: 'inflow' | 'outflow' | null;
     label: string;
     icon: string;
     iconClassName: string;
+    // alwaysShowIcon?: boolean;
   };
 
   const toolbarTabs: ToolbarTab[] = [
     {
-      id: 'all',
+      id: null,
       label: 'All',
       icon: checkIcon,
       iconClassName: 'btn-filter__checkicon'
     },
     {
-      id: 'plus',
+      id: 'inflow',
       label: '',
       icon: plusIcon,
       iconClassName: 'btn-filter__icon'
     },
     {
-      id: 'minus',
+      id: 'outflow',
       label: '',
       icon: minusIcon,
       iconClassName: 'btn-filter__icon'
     },
   ];
 
+
   return <section className="toolbar">
-    <div className="d-flex align-items-center justify-content-between mb-1">
+    {/* <div className="d-flex align-items-center justify-content-between mb-1">
       <div>
         Showing account X of X
       </div>
@@ -59,19 +63,19 @@ const Toolbar: React.FC = () => {
           <img src={arrowRightIcon} alt="arrow right" />
         </button>
       </div>
-    </div>
+    </div> */}
 
     <div className="d-flex gap-8 mb-1 flex-wrap">
-      <div className="d-flex flex-1 position-relative search-input">
+      {/* <div className="d-flex flex-1 position-relative search-input">
         <img className="search-input__icon" src={searchIcon} alt="search" />
         <input className="search-input__input"
           type="text"
           placeholder="Name, amount, category or date"
         />
-      </div>
+      </div> */}
 
       {toolbarTabs.map((tab, index) => (
-        <button key={`tab-${tab.id}-${index}`} className={`d-flex align-items-center justify-content-center btn-filter ${activeTab === tab.id ? 'active' : ''}`} onClick={() => handleTabClick(tab.id)}>
+        <button key={`tab-${tab.id}-${index}`} className={`d-flex align-items-center justify-content-center btn-filter ${cashflow === tab.id ? 'active' : ''}`} onClick={() => handleTabClick(tab.id)}>
           <img src={tab.icon} className={tab.iconClassName} alt={tab.label} />
           {tab.label}
         </button>
