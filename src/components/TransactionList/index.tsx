@@ -2,6 +2,50 @@ import React from 'react';
 import './styles.css';
 
 
+const TransactionLoader = ({ showSkeleton = false }: { showSkeleton?: boolean }) => {
+  const skeletonStyle = {
+    background: 'var(--border-color)',
+    borderRadius: '4px'
+  };
+
+  const SkeletonRow = () => (
+    <div className="d-flex align-items-center transaction-row">
+      <div className="d-flex align-items-center justify-content-center transaction-row__icon" style={skeletonStyle} />
+      <div className="d-flex justify-content-between align-items-center flex-1">
+        <div>
+          <div className="transaction-row__title">
+            <div style={{ ...skeletonStyle, width: '200px', height: '20px' }} />
+          </div>
+          <div className="transaction-row__subtitle">
+            <div style={{ ...skeletonStyle, width: '120px', height: '14px', marginTop: '8px' }} />
+          </div>
+        </div>
+        <div className="transaction-row__amount">
+          <div style={{ ...skeletonStyle, width: '80px', height: '20px' }} />
+        </div>
+      </div>
+    </div>
+  );
+
+  if (showSkeleton) {
+    return (
+      <div className="d-flex d-flex-column gap-8">
+        {Array.from({ length: 7 }).map((_, i) => (
+          <SkeletonRow key={`skeleton-${i}`} />
+        ))}
+      </div>
+    );
+  }
+
+  return (
+    <div className="d-flex justify-content-center align-items-center mt-1 mb-1">
+      <div className="d-flex align-items-center gap-8">
+        <p><strong style={{ color: 'var(--text-secondary-color)' }}>Loading transactions...</strong></p>
+      </div>
+    </div>
+  );
+};
+
 export const Transaction: React.FC = () => {
   const generateTransaction = (index: number) => {
     const isInflow = Math.random() > 0.7;
@@ -69,11 +113,12 @@ export const Transaction: React.FC = () => {
     };
   };
 
-  const transactions = Array.from({ length: 5 }, (_, index) => generateTransaction(index));
+  const transactions = Array.from({ length: 7 }, (_, index) => generateTransaction(index));
 
   return (
     <section>
       <div className="d-flex d-flex-column gap-8">
+        <TransactionLoader showSkeleton={true} />
         <div>Today</div>
         {transactions.map((transaction: any, index: number) => (
           <div
@@ -107,6 +152,7 @@ export const Transaction: React.FC = () => {
             </div>
           </div>
         ))}
+        <TransactionLoader showSkeleton={false} />
       </div>
     </section>
   );
