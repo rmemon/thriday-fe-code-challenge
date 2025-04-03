@@ -4,7 +4,7 @@
 }
 
 .transaction-row {
-  padding: 1rem;
+  padding: 1.2rem;
   background-color: var(--white-color);
   border-radius: 8px;
   border: 1px solid var(--border-color);
@@ -12,7 +12,7 @@
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
-    padding: 1.6rem;
+    padding: 1.2rem 2.4rem 1.2rem 1.2rem;
   }
 }
 
